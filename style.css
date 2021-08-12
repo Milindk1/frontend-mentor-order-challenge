@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url(images/pattern-background-desktop.svg) no-repeat,
+    hsl(225, 100%, 94%);
+  font-family: "Red Hat Display", sans-serif;
+}
+.card {
+  width: 30%;
+  height: 77%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.3);
+}
+.picture {
+  width: 100%;
+  height: 32%;
+  background: url(./images/illustration-hero.svg);
+  background-size: cover;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.heading {
+  font-weight: 900;
+  font-size: 1.7rem;
+  margin-top: 40px;
+  margin-bottom: 16px;
+  color: rgba(0, 0, 0, 0.904);
+}
+.details {
+  width: 80%;
+  color: rgba(0, 0, 0, 0.55);
+  font-weight: 700;
+  line-height: 25px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.plan {
+  display: flex;
+  width: 70%;
+  align-items: center;
+}
+.vertical {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.name {
+  font-weight: 900;
+}
+.price {
+  color: rgba(0, 0, 0, 0.55);
+  font-weight: 700;
+}
+.icon {
+  margin-right: 20px;
+}
+.change-link,
+.change-link:visited,
+.change-link:link {
+  font-weight: 900;
+  text-decoration: none;
+  color: hsl(245, 75%, 52%);
+}
+.proceed {
+  margin-top: 55px;
+  width: 80%;
+  height: 45px;
+  background: hsl(245, 75%, 52%);
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-weight: 900;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  font-family: "Red Hat Display", sans-serif;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.204);
+}
+.cancel {
+  margin-top: 30px;
+  border: none;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.55);
+}
+.change-link:active {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+}
+.proceed:active {
+  background-color: hsl(224, 23%, 55%);
+}
+.cancel:active {
+  color: black;
+}
+
+.attribution {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    width: 90%;
+  }
+}
